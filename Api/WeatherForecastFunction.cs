@@ -14,19 +14,19 @@ namespace BlazorApp.Api
     {
         private static string GetSummary(int temp)
         {
-            var summary = "Mild";
+            var summary = "Si sta benone!";
 
             if (temp >= 32)
             {
-                summary = "Hot";
+                summary = "Caldo";
             }
             else if (temp <= 16 && temp > 0)
             {
-                summary = "Cold";
+                summary = "Freddo";
             }
             else if (temp <= 0)
             {
-                summary = "Freezing";
+                summary = "Si gela";
             }
 
             return summary;
